@@ -16,5 +16,23 @@ A modular, reusable AI assistant framework that can be adapted for any domain.
 - `domain/` - Domain-specific implementations
 - `utils/` - Utility functions
 
-## Getting Started
-See setup instructions below...
+
+## Creating Custom Tools
+
+See `example_tool.py` for the pattern to create your own tools.
+
+```python
+from components.tools.base import BaseTool
+
+class YourTool(BaseTool):
+    @property
+    def name(self):
+        return "your_tool_name"
+    
+    @property
+    def description(self):
+        return "What your tool does"
+    
+    async def execute(self, params):
+        # Your logic here
+        return {"result": "your_result"}
