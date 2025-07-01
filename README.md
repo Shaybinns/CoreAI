@@ -16,6 +16,18 @@ A modular, reusable AI assistant framework that can be adapted for any domain.
 - `domain/` - Domain-specific implementations
 - `utils/` - Utility functions
 
+## Customizing AI Behavior
+
+You can customize the AI by:
+- Adding custom prompts in the CharacteristicsManager
+- Extending the memory system for better context
+- Creating domain-specific tools
+- Integrating with external APIs
+
+Integration Examples
+- quickstart.py - Minimal example
+- advanced_example.py - Using multiple tools
+- custom_memory.py - Extending memory system
 
 ## Creating Custom Tools
 
